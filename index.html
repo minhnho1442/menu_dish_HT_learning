@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#164c3b">
+  <meta name="description" content="KOI Café Mini Menu - menu mẫu với chức năng tìm kiếm món nước.">
+  <title>KOI Café | Mini Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <div class="hero__topline"><span class="brand-mark" aria-hidden="true">✳</span><span>KOI CAFÉ</span><span class="hero__dot" aria-hidden="true"></span><span>MINI MENU</span></div>
+      <div class="hero__content">
+        <p class="eyebrow">Hương vị nhiệt đới</p>
+        <h1>Chút tươi mát<br><em>cho ngày đẹp hơn.</em></h1>
+        <p class="hero__desc">Khám phá những món uống quen thuộc trong không gian xanh dịu nhẹ.</p>
+      </div>
+      <div class="hero__ornament hero__ornament--one" aria-hidden="true"></div>
+      <div class="hero__ornament hero__ornament--two" aria-hidden="true"></div>
+      <div class="hero__footer"><span>FRESH & SIMPLE</span><span aria-hidden="true">✦</span><span>MADE TO ENJOY</span></div>
+    </header>
+
+    <section class="menu-section" aria-labelledby="menu-heading">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow eyebrow--dark">THỰC ĐƠN CỦA CHÚNG TÔI</p>
+          <h2 id="menu-heading">Chọn món yêu thích</h2>
+          <p class="section-subtitle">Ba hương vị, một chút niềm vui.</p>
+        </div>
+        <span class="menu-count" id="menuCount" aria-live="polite">03 món</span>
+      </div>
+
+      <div class="search-wrap">
+        <label class="search-label" for="menuSearch">Tìm món nước</label>
+        <div class="search-field">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+          <input id="menuSearch" type="search" placeholder="Ví dụ: sinh tố xoài..." autocomplete="off" aria-controls="menuGrid">
+        </div>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card" data-name="Sinh tố xoài">
+          <div class="menu-card__art menu-card__art--mango" aria-hidden="true">
+            <div class="art-glow"></div><div class="drink-shadow"></div><div class="drink-glass"><div class="drink-fill"></div><div class="drink-shine"></div><div class="drink-straw"></div></div><div class="fruit fruit--one"></div><div class="fruit fruit--two"></div><span class="art-symbol">✺</span>
+          </div>
+          <div class="menu-card__body">
+            <span class="menu-card__category">SINH TỐ TRÁI CÂY</span>
+            <h3>Sinh tố xoài</h3>
+            <p>Xoài thơm ngọt, xay mịn, mát lành trong từng ngụm.</p>
+            <div class="menu-card__bottom"><strong>55.000 <small>đ</small></strong><span class="menu-card__number">01</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-name="Sinh tố dừa">
+          <div class="menu-card__art menu-card__art--coconut" aria-hidden="true">
+            <div class="art-glow"></div><div class="drink-shadow"></div><div class="drink-glass"><div class="drink-fill"></div><div class="drink-shine"></div><div class="drink-straw"></div></div><div class="coconut-half"></div><span class="art-symbol">✳</span>
+          </div>
+          <div class="menu-card__body">
+            <span class="menu-card__category">SINH TỐ TRÁI CÂY</span>
+            <h3>Sinh tố dừa</h3>
+            <p>Dừa béo dịu, thơm tự nhiên, mang vị mát của đảo xanh.</p>
+            <div class="menu-card__bottom"><strong>50.000 <small>đ</small></strong><span class="menu-card__number">02</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-name="Cà phê sữa đá">
+          <div class="menu-card__art menu-card__art--coffee" aria-hidden="true">
+            <div class="art-glow"></div><div class="drink-shadow"></div><div class="drink-glass"><div class="drink-fill"></div><div class="drink-shine"></div><div class="drink-straw"></div></div><div class="coffee-bean coffee-bean--one"></div><div class="coffee-bean coffee-bean--two"></div><span class="art-symbol">✴</span>
+          </div>
+          <div class="menu-card__body">
+            <span class="menu-card__category">CÀ PHÊ VIỆT NAM</span>
+            <h3>Cà phê sữa đá</h3>
+            <p>Cà phê đậm đà hòa cùng sữa, mát lạnh và đầy năng lượng.</p>
+            <div class="menu-card__bottom"><strong>40.000 <small>đ</small></strong><span class="menu-card__number">03</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="empty-state" id="emptyState" hidden role="status">
+        <span class="empty-state__icon" aria-hidden="true">⌕</span>
+        <h3>Chưa tìm thấy món phù hợp</h3>
+        <p>Thử tìm bằng tên khác nhé, ví dụ “xoài” hoặc “cà phê”.</p>
+      </div>
+      <p class="price-note">* Giá trên chỉ mang tính minh họa, không phải giá bán thực tế tại KOI Café.</p>
+    </section>
+    <footer class="page-footer"><span>KOI CAFÉ</span><span>Made for fresh moments ✳</span></footer>
+  </main>
+</body>
+</html>
